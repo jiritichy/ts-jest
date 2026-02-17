@@ -23,6 +23,13 @@ export default tseslint.config(
   {
     ignores: ['**/dist', '**/node_modules', '**/coverage', 'website/build', 'website/.docusaurus'],
   },
+{
+    settings: {
+      jest: {
+        version: 29,
+      },
+    },
+  },
   eslint.configs.recommended,
   tseslint.configs.strict,
   importPlugin.flatConfigs.recommended,
